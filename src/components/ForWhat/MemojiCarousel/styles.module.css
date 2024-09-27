@@ -1,0 +1,18 @@
+.memojiCarousel {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  gap: 25px;
+}
+
+.memojiItems {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: transform linear;
+}
+
+.memoji {
+  width: 100px;
+  height: 100px;
+}

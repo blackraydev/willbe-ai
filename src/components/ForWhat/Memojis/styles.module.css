@@ -1,0 +1,9 @@
+.memojisWrapper {
+  display: flex;
+  gap: 50px;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}

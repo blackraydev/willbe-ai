@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  background: rgb(248, 248, 248);
+}
+
+.headerPart {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  justify-content: center;
+
+  &:first-of-type {
+    justify-content: flex-start;
+  }
+
+  &:last-of-type {
+    justify-content: flex-end;
+  }
+}
+
+.title {
+  font-size: 18px;
+}
+
+.tab {
+  width: 33%;
+  margin: 0 30px;
+  font-size: 15px;
+  text-align: center;
+
+  &:first-of-type {
+    text-align: end;
+  }
+
+  &:last-of-type {
+    text-align: start;
+  }
+}
+
+.sendButton {
+  cursor: pointer;
+  transition: 0.2s ease;
+  width: 160px;
+  height: 40px;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transform: scale(0.8);
+
+  &:hover {
+    background-color: rgb(50, 50, 50);
+  }
+}

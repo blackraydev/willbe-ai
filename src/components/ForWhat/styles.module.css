@@ -1,0 +1,9 @@
+.forWhat {
+  display: flex;
+  margin: 100px 0;
+  width: 1280px;
+  height: 550px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px rgba(31, 31, 32, 0.075);
+}
