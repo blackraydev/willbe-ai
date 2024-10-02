@@ -1,0 +1,29 @@
+.cases {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.casesTitle {
+  margin-bottom: 75px;
+  font-weight: 550;
+  font-size: 48px;
+  text-align: center;
+  line-height: 1.25;
+  color: rgb(51, 51, 51);
+  animation: 1s ease 0s 1 enterIn;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 1280px) {
+  .cases {
+    padding-top: 150px;
+  }
+
+  .casesTitle {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}

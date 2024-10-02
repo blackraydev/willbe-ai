@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 100%;
 }
 
 .title {
@@ -18,7 +17,7 @@
 .point {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   text-align: start;
   width: 100%;
@@ -28,4 +27,24 @@
 .interpunct {
   font-size: 24px;
   margin: 0 15px;
+}
+
+@media (max-width: 1280px) {
+  .forWhatText {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding-right: 30px;
+  }
+
+  .point {
+    font-size: 16px;
+    padding-right: 50px;
+    line-height: 1.5;
+  }
 }

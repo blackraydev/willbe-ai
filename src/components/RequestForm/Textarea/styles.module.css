@@ -1,0 +1,35 @@
+.textareaWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 600px;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 4px 4px rgba(31, 31, 32, 0.03);
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  resize: none;
+
+  &::placeholder {
+    color: #c8c8cd;
+  }
+}
+
+@media (max-width: 1280px) {
+  .textareaWrapper {
+    width: 100%;
+  }
+}

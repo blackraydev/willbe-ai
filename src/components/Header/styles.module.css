@@ -10,13 +10,16 @@
   padding: 0 100px;
   border-bottom: 1px solid rgb(240, 240, 240);
   background: rgb(248, 248, 248);
+  z-index: 1000;
 }
 
 .headerPart {
   display: flex;
   align-items: center;
   width: 33%;
+  gap: 10px;
   justify-content: center;
+  cursor: pointer;
 
   &:first-of-type {
     justify-content: flex-start;
@@ -25,6 +28,12 @@
   &:last-of-type {
     justify-content: flex-end;
   }
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 4px;
 }
 
 .title {
@@ -60,5 +69,19 @@
 
   &:hover {
     background-color: rgb(50, 50, 50);
+  }
+}
+
+@media (max-width: 1280px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .headerPart {
+    width: 50%;
+  }
+
+  .tabs {
+    display: none !important;
   }
 }

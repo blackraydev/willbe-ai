@@ -1,5 +1,6 @@
+import { Cases, ForWhat, Header, HeroSection, RequestForm, Features, Wrapper } from './components';
+import { Footer } from './components/Footer';
 import './App.css';
-import { ForWhat, Header, HeroSection, Wrapper } from './components';
 
 function App() {
   return (
@@ -7,6 +8,10 @@ function App() {
       <Header />
       <HeroSection />
       <ForWhat />
+      <Features />
+      <Cases />
+      <RequestForm />
+      <Footer />
     </Wrapper>
   );
 }
