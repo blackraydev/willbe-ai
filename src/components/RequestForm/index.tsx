@@ -3,6 +3,7 @@ import { useScroll } from '../../hooks';
 import { Input } from './Input';
 import { Textarea } from './Textarea';
 import { PhoneInput } from './PhoneInput';
+import { Loader } from './Loader';
 import styles from './styles.module.css';
 
 export const RequestForm = () => {
@@ -157,7 +158,7 @@ export const RequestForm = () => {
         </p>
       ) : (
         <button className={styles.sendButton} onClick={handleSubmit}>
-          {isSubmitting ? 'Идет отправка...' : 'Отправить'}
+          {isSubmitting ? <Loader /> : 'Отправить'}
         </button>
       )}
     </div>

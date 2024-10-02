@@ -5,5 +5,9 @@ type WrapperProps = {
 };
 
 export const Wrapper = ({ children }: WrapperProps) => {
-  return <div className={styles.wrapper}>{children}</div>;
+  return (
+    <div id="wrapper" className={styles.wrapper}>
+      {children}
+    </div>
+  );
 };

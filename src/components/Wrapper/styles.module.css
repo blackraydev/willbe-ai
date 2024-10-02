@@ -10,6 +10,6 @@
 @media (max-width: 1280px) {
   .wrapper {
     padding: 0 16px;
-    overflow: hidden !important;
+    overflow-x: hidden;
   }
 }

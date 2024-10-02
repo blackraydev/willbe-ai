@@ -18,6 +18,9 @@
 }
 
 .sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: 0.2s ease;
   width: 120px;
