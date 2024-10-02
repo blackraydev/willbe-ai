@@ -5,25 +5,25 @@ import { useScreen } from '../../../hooks';
 import { Fragment } from 'react/jsx-runtime';
 
 const memojiesOne = [
-  { src: '/src/assets/memojies/memoji1.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji2.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji3.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji4.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji5.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji6.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji7.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji8.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji1.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji2.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji3.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji4.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji5.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji6.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji7.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji8.png', alt: 'Memoji' },
 ];
 
 const memojiesTwo = [
-  { src: '/src/assets/memojies/memoji9.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji10.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji11.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji12.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji13.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji14.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji15.png', alt: 'Memoji' },
-  { src: '/src/assets/memojies/memoji16.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji9.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji10.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji11.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji12.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji13.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji14.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji15.png', alt: 'Memoji' },
+  { src: '/img/memojies/memoji16.png', alt: 'Memoji' },
 ];
 
 export const Memojis = () => {

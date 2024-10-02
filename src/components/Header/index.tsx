@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerPart} onClick={() => scrollToElem('#hero-section')}>
-        <img className={styles.logo} src="/src/assets/logo-willbe-shadow.svg" />
+        <img className={styles.logo} src="/img/logo-shadow.svg" />
         <span className={styles.title}>WillBe AI</span>
       </div>
       <div className={cn(styles.headerPart, styles.tabs)}>

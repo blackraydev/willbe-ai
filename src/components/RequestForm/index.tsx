@@ -1,10 +1,9 @@
-import { useState } from 'react';
-import { createDefaultMaskGenerator, MaskedInput } from 'react-hook-mask';
+import { CSSProperties, useState } from 'react';
 import { useScroll } from '../../hooks';
 import { Input } from './Input';
 import { Textarea } from './Textarea';
-import styles from './styles.module.css';
 import { PhoneInput } from './PhoneInput';
+import styles from './styles.module.css';
 
 export const RequestForm = () => {
   const { elementRef, scrollProgress } = useScroll();
@@ -88,7 +87,7 @@ export const RequestForm = () => {
     }
   };
 
-  const getTitleStyles = () => {
+  const getTitleStyles = (): CSSProperties => {
     const opacity = 0.675 + scrollProgress > 1 ? 1 : 0.675 + scrollProgress;
     const scaleCoeff = 0.7 + scrollProgress * 0.5 > 1 ? 1 : 0.7 + scrollProgress * 0.5;
     const translate = scrollProgress > 0.5 ? 0 : -50 + 100 * scrollProgress;
@@ -102,7 +101,7 @@ export const RequestForm = () => {
     };
   };
 
-  const getStyles = () => {
+  const getStyles = (): CSSProperties => {
     const opacity = 0.5 + scrollProgress > 1 ? 1 : 0.4 + scrollProgress;
     const transform = scrollProgress > 0.5 ? 0 : 100 - 200 * scrollProgress;
 

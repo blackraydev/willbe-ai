@@ -7,7 +7,6 @@ export const Footer = () => {
         <p>@ WillBe AI</p>
       </div>
       <div className={styles.socials}>
-        <a href="#">Telegram</a>
         <a href="https://www.instagram.com/willbe_ai/" target="_blank">
           Instagram
         </a>

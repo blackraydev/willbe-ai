@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import { useScroll } from '../../hooks';
 import styles from './styles.module.css';
 
@@ -46,7 +47,7 @@ const Feature = ({ item }: { item: FeatureType }) => (
 export const Features = () => {
   const { elementRef, scrollProgress } = useScroll();
 
-  const getTitleStyles = () => {
+  const getTitleStyles = (): CSSProperties => {
     const opacity = 0.675 + scrollProgress > 1 ? 1 : 0.675 + scrollProgress;
     const scaleCoeff = 0.7 + scrollProgress * 0.5 > 1 ? 1 : 0.7 + scrollProgress * 0.5;
     const translate = scrollProgress > 0.5 ? 0 : -50 + 100 * scrollProgress;
@@ -60,7 +61,7 @@ export const Features = () => {
     };
   };
 
-  const getRowStyles = (reverse: boolean = false) => {
+  const getRowStyles = (reverse: boolean = false): CSSProperties => {
     const coeffFirst = reverse ? -1 : 1;
     const coeffSecond = reverse ? 1 : -1;
     const opacity = 0.5 + scrollProgress > 1 ? 1 : 0.4 + scrollProgress;

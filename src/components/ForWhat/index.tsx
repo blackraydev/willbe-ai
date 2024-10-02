@@ -1,12 +1,13 @@
-import styles from './styles.module.css';
+import { CSSProperties } from 'react';
+import { useScroll } from '../../hooks';
 import { Memojis } from './Memojis';
 import { ForWhatText } from './ForWhatText';
-import { useScroll } from '../../hooks';
+import styles from './styles.module.css';
 
 export const ForWhat = () => {
   const { elementRef, scrollProgress } = useScroll();
 
-  const getStyles = () => {
+  const getStyles = (): CSSProperties => {
     const opacity = 0.5 + scrollProgress > 1 ? 1 : 0.4 + scrollProgress;
     const transform = scrollProgress > 0.5 ? 0 : 100 - 200 * scrollProgress;
 
