@@ -64,7 +64,7 @@ export const RequestForm = () => {
 
       setIsSubmitting(true);
 
-      await fetch('http://localhost:8080/request', {
+      await fetch('https://api.willbeai.ru/request', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
