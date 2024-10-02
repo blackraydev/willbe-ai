@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "copy": "rm -rf /var/www/willbe-ai/* && cp -r ./dist/* /var/www/willbe-ai",
     "preview": "vite preview"
   },
   "dependencies": {
